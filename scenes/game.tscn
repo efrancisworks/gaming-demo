@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cgq3eb7di5r6a"]
+[gd_scene load_steps=13 format=3 uid="uid://cgq3eb7di5r6a"]
 
 [ext_resource type="PackedScene" uid="uid://cxdbxm1738s3r" path="res://scenes/player.tscn" id="1_ohw56"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_ymaqr"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://g236cp6q0mmp" path="res://scenes/coin.tscn" id="5_a7fcq"]
 [ext_resource type="PackedScene" uid="uid://blh7mc1vna3en" path="res://scenes/killzone.tscn" id="6_3377p"]
 [ext_resource type="PackedScene" uid="uid://b3ed1acc3ph5n" path="res://scenes/slime.tscn" id="7_p8y74"]
+[ext_resource type="FontFile" uid="uid://b6q2pnldqxfpx" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="8_u6k71"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3tsxl"]
 texture = ExtResource("3_x1aiy")
@@ -168,6 +169,8 @@ sources/0 = SubResource("TileSetAtlasSource_3tsxl")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0rn40"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_p21kl"]
+
 [node name="Game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -220,3 +223,16 @@ position = Vector2(314, 12)
 
 [node name="slime" parent="." instance=ExtResource("7_p8y74")]
 position = Vector2(-86, 43)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Node"]
+offset_left = -132.0
+offset_top = 5.0
+offset_right = 62.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_u6k71")
+theme_override_font_sizes/font_size = 8
+text = "Space To Jump"
+label_settings = SubResource("LabelSettings_p21kl")
