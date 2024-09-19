@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://4gnrwl4rh430"]
+
+[ext_resource type="ArrayMesh" uid="uid://b5eqnp1oq674d" path="res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/obj/floor_tile_large.obj" id="1_nr0oy"]
+
+[node name="mesh_library" type="Node3D"]
+
+[node name="FloorTileLarge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_nr0oy")
