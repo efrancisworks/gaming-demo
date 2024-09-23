@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://p3mpbugft5ph"]
+[gd_scene load_steps=7 format=3 uid="uid://p3mpbugft5ph"]
 
 [ext_resource type="MeshLibrary" uid="uid://00ypn18u5o0" path="res://Scenes/Levels/library.tres" id="1_r6k75"]
 [ext_resource type="PackedScene" uid="uid://ceh3x7jlds514" path="res://Scenes/Player/Player.tscn" id="2_tkl4x"]
+[ext_resource type="PackedScene" uid="uid://bl1j7qblhenms" path="res://Scenes/monster/skeleton_warrior_monster.tscn" id="3_ujd7s"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_h5k57"]
 
@@ -12,13 +13,15 @@ sky_material = SubResource("ProceduralSkyMaterial_h5k57")
 background_mode = 1
 background_color = Color(0.392157, 0.392157, 0.392157, 1)
 sky = SubResource("Sky_n6yqn")
-fog_enabled = true
 fog_light_energy = 0.1
 fog_density = 0.002
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.02
 
 [node name="Level 1" type="Node3D"]
+
+[node name="player" parent="." instance=ExtResource("2_tkl4x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.66819, 0.552072, 0.775099)
 
 [node name="GridMap" type="GridMap" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.53209, 0)
@@ -30,5 +33,5 @@ data = {
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rgh0u")
 
-[node name="player" parent="." instance=ExtResource("2_tkl4x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.66819, 0.552072, 0.775099)
+[node name="skeleton_warrior_monster" parent="." instance=ExtResource("3_ujd7s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.69942, -0.48209, 6.35539)
