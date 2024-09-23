@@ -33,5 +33,6 @@ data = {
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rgh0u")
 
-[node name="skeleton_warrior_monster" parent="." instance=ExtResource("3_ujd7s")]
+[node name="skeleton_warrior_monster" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_ujd7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.69942, -0.48209, 6.35539)
+player = NodePath("../player")

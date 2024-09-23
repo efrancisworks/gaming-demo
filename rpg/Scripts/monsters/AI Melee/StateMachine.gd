@@ -5,7 +5,6 @@ var state ={
 	"Run" : preload("res://Scripts/monsters/AI Melee/RunState.gd"),
 	"Attack" : preload("res://Scripts/monsters/AI Melee/AttackState.gd"),
 	"Death" : preload("res://Scripts/monsters/AI Melee/DeathState.gd")
-	
 }
 
 func change_state(new_state: String):
@@ -13,6 +12,6 @@ func change_state(new_state: String):
 		if !("Death" in get_child(0).name):
 			get_child(0).queue_free()
 		if state.has(new_state):
-			var state_temp = state[new_state].new()
-			state_temp.name = new_state
-			add_child(state_temp)
+			var stateTemp = state[new_state].new()
+			stateTemp.name = new_state
+			add_child(stateTemp)

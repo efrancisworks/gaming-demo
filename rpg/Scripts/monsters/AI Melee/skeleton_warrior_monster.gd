@@ -24,21 +24,36 @@ func _physics_process(delta: float) -> void:
 	if player:
 		direction = (player.global_transform.origin - self.global_transform.origin).normalized()
 		
-	
 	move_and_slide()
 
-
 func _on_chase_player_detection_body_entered(body: Node3D) -> void:
-	pass # Replace with function body.
-
-
-func _on_attack_player_detection_body_entered(body: Node3D) -> void:
-	pass # Replace with function body.
+	if body.is_in_group("player") and !dying:
+		state_controller.change_state("Run")
 
 
 func _on_chase_player_detection_body_exited(body: Node3D) -> void:
-	pass # Replace with function body.
+	if body.is_in_group("player") and !dying:
+		state_controller.change_state("Idle")
+
+
+func _on_attack_player_detection_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player") and !dying:
+		state_controller.change_state("Attack")
 
 
 func _on_attack_player_detection_body_exited(body: Node3D) -> void:
-	pass # Replace with function body.
+	if body.is_in_group("player") and !dying:
+		state_controller.change_state("Run")
+
+
+func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
+	if "Awaken" in anim_name:
+		Awakening = false
+	elif "Attack" in anim_name:
+		if (player in get_node("attack_player_detection").get_overlapping_bodies()) and !dying:
+			state_controller.change_state("Attack")
+	elif "Death" in anim_name:
+		death()
+
+func death():
+	self.queue_free()
