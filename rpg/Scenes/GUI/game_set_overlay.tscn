@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://dru25b78e2inv"]
+
+[ext_resource type="Theme" uid="uid://dkxtn4tdxqx6f" path="res://Assets/default.tres" id="1_ausss"]
+[ext_resource type="Script" path="res://Scripts/ui/game_set_overlay.gd" id="1_gyxiv"]
+
+[node name="game_overlay" type="CanvasLayer"]
+follow_viewport_enabled = true
+script = ExtResource("1_gyxiv")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 65.0
+offset_bottom = 55.0
+scale = Vector2(18.3894, 11.9674)
+theme = ExtResource("1_ausss")
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 22.767
+offset_top = 34.3669
+offset_right = 174.767
+offset_bottom = 54.3669
+scale = Vector2(0.0654011, 0.164791)
+theme = ExtResource("1_ausss")
+text = "ENTRY"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 16.6009
+offset_top = 9.30771
+offset_right = 149.601
+offset_bottom = 52.3077
+scale = Vector2(0.172865, 0.205472)
+theme = ExtResource("1_ausss")
+text = "GAME OVER!
+TRY AGAIN!"
+horizontal_alignment = 1
+vertical_alignment = 1
