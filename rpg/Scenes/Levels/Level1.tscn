@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://p3mpbugft5ph"]
+[gd_scene load_steps=7 format=3 uid="uid://p3mpbugft5ph"]
 
 [ext_resource type="MeshLibrary" uid="uid://00ypn18u5o0" path="res://Scenes/Levels/library.tres" id="1_r6k75"]
 [ext_resource type="PackedScene" uid="uid://ceh3x7jlds514" path="res://Scenes/Player/Player.tscn" id="2_tkl4x"]
+[ext_resource type="PackedScene" uid="uid://cggrho6gu1y4k" path="res://Scenes/Monsters/warrior_skelly.tscn" id="3_25q7d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_h5k57"]
 
@@ -32,3 +33,6 @@ metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rgh0u")
+
+[node name="warrior skelly" parent="." instance=ExtResource("3_25q7d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05215, -0.605755, 11.8697)
