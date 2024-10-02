@@ -76,3 +76,8 @@ func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
 			state_controller.change_state("Attack")
 	elif "Death" in anim_name:
 		self.queue_free()
+
+
+func _on_damage_detector_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		body.hit(damage)

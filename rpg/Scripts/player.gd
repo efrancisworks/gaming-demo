@@ -117,7 +117,22 @@ func attack1():
 		
 			
 
+func hit(damage: int):
+	if !just_hit:
+		get_node("just_hit").start()
+		Game.player_health -= damage
+		just_hit = true
+		if Game.player_health <=0:
+			is_dying = true
+			playback.travel(death_node_name)
+		#knocback
+		var tween = create_tween()
+		tween.tween_property(self, "global_position",global_position - (direction/1.5), 0.2)
 
 func _on_damage_detector_body_entered(body: Node3D) -> void:
 	if body.is_in_group("monster") and is_attacking:
 		body.hit(3)
+
+
+func _on_just_hit_timeout() -> void:
+	just_hit = false
