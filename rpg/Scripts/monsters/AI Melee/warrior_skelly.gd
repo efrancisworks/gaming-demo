@@ -55,6 +55,18 @@ func _on_attack_player_detection_body_exited(body: Node3D) -> void:
 	if "player" in body.name and !dying:
 		state_controller.change_state("Run")
 
+func hit(damage: int):
+	if !just_hit:
+		get_node("just_hit").start()
+		health -= damage
+		just_hit = true
+		if health <=0:
+			state_controller.change_state("Death")
+		#knocback
+		var tween = create_tween()
+		tween.tween_property(self, "global_position",global_position - (direction/1.5), 0.2)
+		
+	
 
 func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
 	if "Awaken" in anim_name:

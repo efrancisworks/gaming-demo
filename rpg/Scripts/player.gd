@@ -116,3 +116,8 @@ func attack1():
 			
 		
 			
+
+
+func _on_damage_detector_body_entered(body: Node3D) -> void:
+	if body.is_in_group("monster") and is_attacking:
+		body.hit(3)
