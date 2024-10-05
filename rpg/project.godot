@@ -27,6 +27,10 @@ window/stretch/mode="canvas_items"
 
 import/fbx/enabled=false
 
+[gui]
+
+theme/custom_font="res://Assets/joystix monospace.otf"
+
 [input]
 
 right={
