@@ -1,9 +1,7 @@
 extends Control
 
 func _ready() -> void:
-	var slot = InventorySlot.new()
-	add_child(slot)
-
-
-func _on_control_gui_input(event: InputEvent) -> void:
-	print("Event")
+	for i in range(24):
+		var slot = InventorySlot.new()
+		slot.init(ItemData.Type.MAIN, Vector2(32,32))
+		get_node("grid").add_child(slot)
