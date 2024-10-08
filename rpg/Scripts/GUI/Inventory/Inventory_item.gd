@@ -15,7 +15,7 @@ func _ready() -> void:
 			label.position = Vector2(24,16)
 			add_child(label)
 			
-func _init(d: ItemData) ->void:
+func init(d: ItemData) ->void:
 	data = d 
 
 func _get_drag_data(at_position: Vector2) -> Variant:
