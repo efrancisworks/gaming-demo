@@ -18,12 +18,3 @@ offset_left = 152.0
 offset_top = 82.0
 offset_right = 875.0
 offset_bottom = 427.0
-
-[node name="Control" type="Control" parent="."]
-anchors_preset = 0
-offset_left = 316.0
-offset_top = 12.0
-offset_right = 903.0
-offset_bottom = 430.0
-
-[connection signal="gui_input" from="Control" to="." method="_on_control_gui_input"]
