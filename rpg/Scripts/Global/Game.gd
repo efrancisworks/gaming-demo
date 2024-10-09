@@ -1,5 +1,12 @@
 extends Node
 
+var items ={
+	"default": preload("res://Scenes/GUI/Inventory/item Resources/default_sword.tres"),
+	"long sword": preload("res://Scenes/GUI/Inventory/item Resources/long_sword.tres"),
+	"small potion": preload("res://Scenes/GUI/Inventory/item Resources/small potion.tres")
+	 
+}
+
 var player_health: int = 10
 var player_health_max :int = 2
 var right_hand_equipped : ItemData
