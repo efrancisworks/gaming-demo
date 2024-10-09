@@ -3,7 +3,7 @@ extends TextureRect
 
 @export var data: ItemData
 
-func _ready() -> void:
+func _ready() -> void: 
 	if data:
 		expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED

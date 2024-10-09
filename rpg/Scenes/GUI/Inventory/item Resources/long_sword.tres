@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("2_rj1cg")
 type = 0
-item_name = "small potion"
+item_name = "Long Sword"
 item_damage = 5
 item_health = 0
 item_defense = 0

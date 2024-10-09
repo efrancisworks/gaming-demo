@@ -21,14 +21,6 @@ offset_right = 1427.0
 offset_bottom = 473.0
 columns = 6
 
-[node name="LeftHand" type="PanelContainer" parent="."]
-layout_mode = 0
-offset_left = 448.0
-offset_top = 192.0
-offset_right = 488.0
-offset_bottom = 232.0
-script = ExtResource("2_8ga52")
-
 [node name="RightHand" type="PanelContainer" parent="."]
 layout_mode = 0
 offset_left = 576.0
@@ -44,6 +36,7 @@ offset_top = 128.0
 offset_right = 552.0
 offset_bottom = 168.0
 script = ExtResource("2_8ga52")
+type = 1
 
 [node name="Body" type="PanelContainer" parent="."]
 layout_mode = 0
@@ -52,6 +45,7 @@ offset_top = 192.0
 offset_right = 552.0
 offset_bottom = 232.0
 script = ExtResource("2_8ga52")
+type = 2
 
 [node name="Legs" type="PanelContainer" parent="."]
 layout_mode = 0
@@ -60,6 +54,7 @@ offset_top = 256.0
 offset_right = 552.0
 offset_bottom = 296.0
 script = ExtResource("2_8ga52")
+type = 3
 
 [node name="Feet" type="PanelContainer" parent="."]
 layout_mode = 0
@@ -68,3 +63,4 @@ offset_top = 320.0
 offset_right = 552.0
 offset_bottom = 360.0
 script = ExtResource("2_8ga52")
+type = 4
