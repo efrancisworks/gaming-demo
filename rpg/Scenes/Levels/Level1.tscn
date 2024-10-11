@@ -36,17 +36,17 @@ metadata/_editor_floor_ = Vector3(0, 0, 0)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rgh0u")
 
-[node name="warrior skelly" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_25q7d")]
+[node name="warrior skelly" parent="." instance=ExtResource("3_25q7d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0885, -0.605755, 11.5684)
-player = NodePath("../player")
+script = null
 
-[node name="warrior skelly2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_25q7d")]
+[node name="warrior skelly2" parent="." instance=ExtResource("3_25q7d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9821, -0.427017, -19.273)
-player = NodePath("../player")
+script = null
 
-[node name="warrior skelly3" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_25q7d")]
+[node name="warrior skelly3" parent="." instance=ExtResource("3_25q7d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9821, -0.427017, -6.76412)
-player = NodePath("../player")
+script = null
 
 [node name="Game Over Overlay" parent="." instance=ExtResource("4_nqle3")]
 

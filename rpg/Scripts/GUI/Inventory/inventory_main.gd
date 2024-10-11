@@ -17,7 +17,7 @@ func _ready() -> void:
 	add_item("small potion")
 	add_item("small potion")
 	add_item("small potion")
-	
+	add_item("body armor")
 	add_item("long sword")
 	#for i in items_to_load.size():
 		#var item = InventoryItem.new()

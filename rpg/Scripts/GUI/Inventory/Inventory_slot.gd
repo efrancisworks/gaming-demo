@@ -31,11 +31,16 @@ func _physics_process(delta: float) -> void:
 	#checking equipment
 	if get_child_count() > 0:
 		var item := get_child(0)
-		if type == ItemData.Type.WEAPON: 
-			Game.right_hand_equipped = item.data
-		else:
-			Game.right_hand_equipped = load("res://Scenes/GUI/Inventory/item Resources/default_sword.tres")
-	
+		match type:
+			ItemData.Type.WEAPON: 
+				Game.right_hand_equipped = item.data
+			ItemData.Type.BODY: 
+				Game.body_equipped = item.data
+			_:
+				Game.right_hand_equipped = load("res://Scenes/GUI/Inventory/item Resources/default_sword.tres")
+				Game.body_equipped = load("res://Scenes/GUI/Inventory/item Resources/default_sword.tres")
+
+		
 func _gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if (event.button_index == 2) and (event.button_mask == 0):
