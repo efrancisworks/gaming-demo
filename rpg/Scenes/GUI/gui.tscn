@@ -1,3 +1,44 @@
-[gd_scene format=3 uid="uid://cyiu7w251cssb"]
+[gd_scene load_steps=5 format=3 uid="uid://cyiu7w251cssb"]
+
+[ext_resource type="Script" path="res://Scripts/GUI/gui.gd" id="1_2tyu4"]
+[ext_resource type="PackedScene" uid="uid://ds3giwi5x7f1v" path="res://Scenes/GUI/Inventory/inventory.tscn" id="1_grkak"]
+[ext_resource type="Texture2D" uid="uid://cjid80mokonss" path="res://Assets/ui_big_pieces.png" id="2_bxa3j"]
+[ext_resource type="Theme" uid="uid://dkxtn4tdxqx6f" path="res://Assets/default.tres" id="3_guji7"]
 
 [node name="GUI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_2tyu4")
+
+[node name="UiBigPieces" type="Sprite2D" parent="."]
+position = Vector2(103.5, 38)
+scale = Vector2(2.45833, 2)
+texture = ExtResource("2_bxa3j")
+region_enabled = true
+region_rect = Rect2(259.621, 40.0268, 72.9723, 20.3642)
+
+[node name="hp_bar" type="ProgressBar" parent="."]
+offset_left = 37.0
+offset_top = 24.0
+offset_right = 169.0
+offset_bottom = 51.0
+theme = ExtResource("3_guji7")
+value = 100.0
+show_percentage = false
+
+[node name="container" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BG" type="Panel" parent="container"]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 81.0
+offset_right = 1040.0
+offset_bottom = 559.0
+theme = ExtResource("3_guji7")
+metadata/_edit_lock_ = true
+
+[node name="Inventory" parent="container" instance=ExtResource("1_grkak")]
+layout_mode = 1
