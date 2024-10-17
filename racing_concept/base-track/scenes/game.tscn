@@ -1,13 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://ca8rsidmk7k72"]
 
 [ext_resource type="MeshLibrary" uid="uid://flaiwli23gj6" path="res://scenes/library.tres" id="2_5k265"]
-[ext_resource type="PackedScene" uid="uid://dfegoior1kfio" path="res://scenes/test_car.tscn" id="3_1q0pj"]
+[ext_resource type="PackedScene" uid="uid://c60qoac8l4hmd" path="res://assets/Car/car.tscn" id="2_kx0nv"]
 
 [node name="Game" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.030827, 0, 0.0168409)
-
-[node name="car" parent="." instance=ExtResource("3_1q0pj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.24774, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.258819, 0.965926, 0, -0.965926, -0.258819, 0, 16, 0)
@@ -25,3 +22,6 @@ light_color = Color(1, 0.639216, 0.447059, 1)
 light_energy = 1.485
 light_volumetric_fog_energy = 1.323
 shadow_enabled = true
+
+[node name="Node3D" parent="." instance=ExtResource("2_kx0nv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.74233, 1, -19.8858)

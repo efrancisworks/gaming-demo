@@ -8,12 +8,12 @@ size = Vector3(1.5, 0.5, 3)
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_udfja"]
 points = PackedVector3Array(-0.77381, 0.297507, -1.52351, 0.73229, -0.25, 1.39684, -0.77381, 0.297507, 1.52351, 0.797465, 0.297619, -1.52351, -0.708481, -0.25, -1.39684, 0.73229, -0.25, -1.39684, -0.708481, -0.25, 1.39684, 0.797465, 0.297619, 1.52351)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a41h3"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f14oi"]
 vertex_color_use_as_albedo = true
 albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_1ekac"]
-material = SubResource("StandardMaterial3D_a41h3")
+material = SubResource("StandardMaterial3D_f14oi")
 top_radius = 0.4
 bottom_radius = 0.4
 height = 0.25
