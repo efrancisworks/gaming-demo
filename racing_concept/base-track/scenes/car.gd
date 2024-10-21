@@ -1,7 +1,7 @@
 extends VehicleBody3D
 
 var max_rpm = 500
-var max_torque = 200
+var max_torque = 150
 
 @onready var pivot = $camera_origin
 @export var sens = 0.5
