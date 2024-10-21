@@ -24,4 +24,4 @@ light_volumetric_fog_energy = 1.323
 shadow_enabled = true
 
 [node name="Node3D" parent="." instance=ExtResource("2_kx0nv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.74233, 1, -19.8858)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.74233, 1.87683, -19.8858)
