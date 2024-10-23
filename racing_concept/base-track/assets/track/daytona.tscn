@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dru87lftiy1um"]
+
+[ext_resource type="PackedScene" uid="uid://rn0k02kkhaiy" path="res://cars/Designersoup Low Poly Car Pack Volume 1 updated/Tristar Racer.fbx" id="1_qg6ij"]
+[ext_resource type="MeshLibrary" uid="uid://b4x20ofajtqjh" path="res://assets/track/road.tres" id="2_x3gqv"]
+[ext_resource type="PackedScene" uid="uid://c60qoac8l4hmd" path="res://assets/Car/car.tscn" id="3_y67np"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Tristar Racer" parent="." instance=ExtResource("1_qg6ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.214268, 0.435116)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.729792, 5.79935e-09, -0.683669, 0.20754, 0.95281, 0.221541, 0.651406, -0.303567, 0.695354, 0, 10.2003, 0)
+
+[node name="Node3D" parent="." instance=ExtResource("3_y67np")]
+transform = Transform3D(-0.0246864, 0, -0.49939, 0, 0.5, 0, 0.49939, 0, -0.0246864, -6.45287, 0.651325, 0)
+
+[node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -8.34529, -4.85053, -2.4716)
+mesh_library = ExtResource("2_x3gqv")
+cell_size = Vector3(1, 1, 1)
+data = {
+"cells": PackedInt32Array(65535, 65532, 1048593, 0, 65535, 17, 65535, 0, 17, 0, 0, 17)
+}

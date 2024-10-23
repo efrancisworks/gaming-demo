@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://buw5lxdf1c5t8"
+path="res://.godot/imported/bridge_pillar.obj-a3bb910b91d1375e6a1cf8d864e4b11f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bridge_pillar.obj-a3bb910b91d1375e6a1cf8d864e4b11f.mesh"]
+
+source_file="res://assets/track/Models/OBJ format/bridge_pillar.obj"
+dest_files=["res://.godot/imported/bridge_pillar.obj-a3bb910b91d1375e6a1cf8d864e4b11f.mesh", "res://.godot/imported/bridge_pillar.obj-a3bb910b91d1375e6a1cf8d864e4b11f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

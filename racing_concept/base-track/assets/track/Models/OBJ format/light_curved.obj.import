@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://of3yky3jwi7k"
+path="res://.godot/imported/light_curved.obj-84cf0d4b99d39c50d00398e0b3121c6f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/light_curved.obj-84cf0d4b99d39c50d00398e0b3121c6f.mesh"]
+
+source_file="res://assets/track/Models/OBJ format/light_curved.obj"
+dest_files=["res://.godot/imported/light_curved.obj-84cf0d4b99d39c50d00398e0b3121c6f.mesh", "res://.godot/imported/light_curved.obj-84cf0d4b99d39c50d00398e0b3121c6f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

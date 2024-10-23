@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpds42ylnqt4g"]
+
+[ext_resource type="PackedScene" uid="uid://dxuybm0u2iblb" path="res://assets/track/Models/GLTF format/road_crossing.glb" id="1_tlny2"]
+[ext_resource type="PackedScene" uid="uid://bojgsy5l3ppt0" path="res://assets/track/Models/GLTF format/road_crossroadBarrier.glb" id="2_ar63k"]
+[ext_resource type="PackedScene" uid="uid://dteljh0xjyn8q" path="res://assets/track/Models/GLTF format/road_intersectionLine.glb" id="3_40u7r"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="road_crossing2" parent="." instance=ExtResource("1_tlny2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.574412, 0, -0.370643)
+
+[node name="road_crossing3" parent="." instance=ExtResource("1_tlny2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.851084, 0, 2.9314)
+
+[node name="road_crossing4" parent="." instance=ExtResource("1_tlny2")]
+transform = Transform3D(0.836429, 0, 0, 0, 0.836429, 0, 0, 0, 0.836429, 0.41897, 0, -0.308037)
+
+[node name="road_crossroadBarrier2" parent="." instance=ExtResource("2_ar63k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0506662, 0, -1.89265)
+
+[node name="road_intersectionLine2" parent="." instance=ExtResource("3_40u7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52529, 0, -0.326153)

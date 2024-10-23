@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c4jyo1315uylh"
+path="res://.godot/imported/road_endRound.obj-5e1052f77192af81621e7368ed36c93e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_endRound.obj-5e1052f77192af81621e7368ed36c93e.mesh"]
+
+source_file="res://assets/track/Models/OBJ format/road_endRound.obj"
+dest_files=["res://.godot/imported/road_endRound.obj-5e1052f77192af81621e7368ed36c93e.mesh", "res://.godot/imported/road_endRound.obj-5e1052f77192af81621e7368ed36c93e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

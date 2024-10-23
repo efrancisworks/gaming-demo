@@ -302,7 +302,7 @@ mesh = SubResource("ArrayMesh_n3yby")
 skeleton = NodePath("")
 
 [node name="camera_origin" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.851915, 1.02073, -0.163393)
+transform = Transform3D(-0.992161, 0, -0.12497, 0, 1, 0, 0.12497, 0, -0.992161, -0.851915, 1.02073, -0.163393)
 
 [node name="SpringArm3D" type="SpringArm3D" parent="camera_origin"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.186549)

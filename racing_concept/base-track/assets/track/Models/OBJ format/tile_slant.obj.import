@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://p1xj0xby2rs6"
+path="res://.godot/imported/tile_slant.obj-a2c8737c4bf16c11f3a2c797220d2ceb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_slant.obj-a2c8737c4bf16c11f3a2c797220d2ceb.mesh"]
+
+source_file="res://assets/track/Models/OBJ format/tile_slant.obj"
+dest_files=["res://.godot/imported/tile_slant.obj-a2c8737c4bf16c11f3a2c797220d2ceb.mesh", "res://.godot/imported/tile_slant.obj-a2c8737c4bf16c11f3a2c797220d2ceb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
