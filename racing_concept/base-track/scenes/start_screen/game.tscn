@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ca8rsidmk7k72"]
 
-[ext_resource type="MeshLibrary" uid="uid://flaiwli23gj6" path="res://scenes/library.tres" id="2_5k265"]
+[ext_resource type="MeshLibrary" uid="uid://flaiwli23gj6" path="res://scenes/track/library.tres" id="2_5k265"]
 [ext_resource type="PackedScene" uid="uid://c60qoac8l4hmd" path="res://assets/Car/car.tscn" id="2_kx0nv"]
 
 [node name="Game" type="Node3D"]

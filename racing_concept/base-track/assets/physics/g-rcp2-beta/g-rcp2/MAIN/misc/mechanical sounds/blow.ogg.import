@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddlt8ooy7sesi"
+path="res://.godot/imported/blow.ogg-67c1c6799ca82d9e0bc1b07fd863e6fa.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/physics/g-rcp2-beta/g-rcp2/MAIN/misc/mechanical sounds/blow.ogg"
+dest_files=["res://.godot/imported/blow.ogg-67c1c6799ca82d9e0bc1b07fd863e6fa.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

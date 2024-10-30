@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr7ey0ww3tpw0"]
+
+[sub_resource type="PointMesh" id="1"]
+
+[sub_resource type="BoxMesh" id="2"]
+
+[node name="wheel" type="RayCast3D"]
+
+[node name="geometry" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("1")
+
+[node name="compress" type="MeshInstance3D" parent="geometry"]
+mesh = SubResource("2")
+
+[node name="lateral" type="MeshInstance3D" parent="geometry"]
+mesh = SubResource("2")
+
+[node name="longi" type="MeshInstance3D" parent="geometry"]
+mesh = SubResource("2")
+
+[node name="animation" type="Marker3D" parent="."]
+
+[node name="camber" type="Marker3D" parent="animation"]
+
+[node name="wheel" type="Marker3D" parent="animation/camber"]
+
+[node name="fixed" type="Marker3D" parent="animation"]
+
+[node name="fixed_steer" type="Marker3D" parent="animation"]
+
+[node name="fixed_steercamber" type="Marker3D" parent="animation"]
+
+[node name="fixed_camber" type="Marker3D" parent="animation"]
+
+[node name="fixed_axle" type="Marker3D" parent="animation"]
+
+[node name="DirectionalLight" type="DirectionalLight3D" parent="."]
+editor_only = true
+
+[node name="velocity" type="Marker3D" parent="."]
+
+[node name="step" type="Marker3D" parent="velocity"]
+
+[node name="velocity2" type="Marker3D" parent="."]
+
+[node name="step" type="Marker3D" parent="velocity2"]

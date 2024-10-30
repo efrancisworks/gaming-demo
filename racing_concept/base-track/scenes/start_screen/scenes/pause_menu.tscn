@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5pxonuxeddxd"]
+
+[ext_resource type="Script" path="res://scenes/start_screen/script/pause_menu1.gd" id="1_jupmr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ohbb3"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jupmr")
+
+[node name="Resume" type="Button" parent="."]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 359.0
+offset_right = 497.0
+offset_bottom = 390.0
+text = "Resume
+"
+
+[node name="Exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 724.0
+offset_top = 353.0
+offset_right = 830.0
+offset_bottom = 384.0
+text = "Exit to menu
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 86.0
+offset_right = 458.0
+offset_bottom = 109.0
+scale = Vector2(7.79663, 7.79663)
+text = "Paused"
+label_settings = SubResource("LabelSettings_ohbb3")
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

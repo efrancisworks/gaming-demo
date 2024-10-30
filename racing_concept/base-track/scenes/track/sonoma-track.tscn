@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://npw6pvc2v1tn"]
+[gd_scene load_steps=11 format=3 uid="uid://npw6pvc2v1tn"]
 
 [ext_resource type="Texture2D" uid="uid://bwy6ee01dmmc8" path="res://scenes/track/Daytona-1024x724.jpg" id="1_gy6ah"]
 [ext_resource type="MeshLibrary" uid="uid://di10q1hsdsytf" path="res://assets/track/tree.tres" id="2_0i4kh"]
@@ -6,6 +6,7 @@
 [ext_resource type="MeshLibrary" uid="uid://dwkf5tindh25r" path="res://assets/track/city-track-style.tres" id="2_rvlrx"]
 [ext_resource type="MeshLibrary" uid="uid://c2xlk2732vs7n" path="res://assets/track/buildings.tres" id="3_jaeo1"]
 [ext_resource type="PackedScene" uid="uid://4tq2n8pojq42" path="res://assets/buildings/Pieces/cube4.fbx" id="6_hn6xs"]
+[ext_resource type="PackedScene" uid="uid://b5pxonuxeddxd" path="res://scenes/start_screen/scenes/pause_menu.tscn" id="7_i77qb"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_uw6vp"]
 
@@ -77,3 +78,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.205, 7.06372, -4.81108)
 
 [node name="cube4" parent="." instance=ExtResource("6_hn6xs")]
 transform = Transform3D(1, 0, 0, 0, 7.34667, 0, 0, 0, 1, 157.199, 14.0419, 26.7875)
+
+[node name="menu" parent="." instance=ExtResource("7_i77qb")]

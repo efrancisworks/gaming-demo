@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://csvjit6by7weh"
+path="res://.godot/imported/offroad.ogg-f8649bc9bda6a315c8f1cc8b9336f11d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/physics/g-rcp2-beta/g-rcp2/MAIN/misc/tyre sounds/offroad.ogg"
+dest_files=["res://.godot/imported/offroad.ogg-f8649bc9bda6a315c8f1cc8b9336f11d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

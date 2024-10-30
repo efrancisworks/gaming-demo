@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://gjyyvcmkyth6"
+path="res://.godot/imported/peel0.ogg-6bdd1300b69934916ef95d8602ccd37e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/physics/g-rcp2-beta/g-rcp2/MAIN/misc/tyre sounds/peel0.ogg"
+dest_files=["res://.godot/imported/peel0.ogg-6bdd1300b69934916ef95d8602ccd37e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

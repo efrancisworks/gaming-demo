@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bfw3xkp507ul4"
+path="res://.godot/imported/3.ogg-1166ce6e2fe85b239b6e8e52cb12d36e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/physics/g-rcp2-beta/g-rcp2/MAIN/misc/engine sound/3.ogg"
+dest_files=["res://.godot/imported/3.ogg-1166ce6e2fe85b239b6e8e52cb12d36e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
